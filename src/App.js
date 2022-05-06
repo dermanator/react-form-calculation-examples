@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import {Container, Row, Col, Card} from 'react-bootstrap';
+import { CalcFormNoFramework } from './CalcFormNoFramework';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Container fluid>
+        <Row>
+          <Col>
+            <Card>
+              <Card.Header>Calculated Form No Framework</Card.Header>
+              <Card.Body>
+                <Card.Text>
+                  <CalcFormNoFramework />
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>2 of 3</Col>
+          <Col>3 of 3</Col>
+        </Row>
+      </Container>
+    </div> 
   );
 }
 
